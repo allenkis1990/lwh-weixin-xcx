@@ -1,0 +1,6 @@
+
+
+page{background:red;height:3000rpx;}
+.lwh{text-align: center;}
+.lwh text{color:#fff;}
+.lwh-scroll{height:200rpx;border:1px solid #fff;display:block}

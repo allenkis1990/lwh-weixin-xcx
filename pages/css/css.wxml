@@ -1,0 +1,48 @@
+<view class="main-box">
+    <view class="inner-box">
+        <view style="background:green;">1234</view>
+        <view style="background:#000;flex:1;line-height:60rpx">1234</view>
+        <view style="background:pink;">1234</view>
+    </view>
+
+
+
+
+    <view class="float-box">
+
+      <!--button这种行内组件实现左右两边对齐space-between 需要在外层套一层view-->
+      <view>
+        <button>1</button>
+      </view>
+      <view>
+        <button>2</button>
+      </view>
+      <view>
+        <button>3</button>
+      </view>
+      <view>
+        <button>4</button>
+      </view>
+      
+      
+      
+      
+    </view>
+
+
+
+    <view class="ul">
+
+        <view class="li">
+          <view class="left"></view>
+          <view class="right">
+              <view class="right-item">1111111111111111</view>
+              <view class="right-item">1111111111111111</view>
+              <view class="right-item">1111111111111111</view>
+          </view>
+        </view>
+
+
+    </view>
+
+</view>

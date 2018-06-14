@@ -1,0 +1,44 @@
+<wxs module='wxs1' src="../../wxsTemplates/wxs1.wxs">
+</wxs>
+
+<view>{{wxs1.getDetail()}}</view>
+
+
+
+<swiper indicator-dots="true"
+        bindanimationfinish="animationfinish" 
+        autoplay="true" 
+        interval="3000" 
+        circular="true">
+
+  <block wx:for="{{swiperArr}}">
+
+    <swiper-item>
+      <view style='width:{{item.width}};height:{{item.height}};background:{{item.bgColor}};margin:0 auto'></view>
+    </swiper-item>
+
+  </block>
+
+</swiper>
+
+
+
+<!--覆盖物-->
+<video id="myVideo" style="margin-top:10px;" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" controls="{{false}}" event-model="bubble">
+  <cover-view style="width:100rpx;height:100rpx;background:red">
+    
+  </cover-view>
+</video>
+
+<view>
+  <block wx:for="{{iconArr}}">
+    <icon type="{{item}}" size="50"></icon>
+  </block>
+</view>
+
+<button loading="{{loading}}" 
+open-type="getphonenumber"
+bindgetphonenumber="getUserDetail"
+style="width:200px;border-radius:50px;border:1px solid red"
+bindtap="btnFn"
+disabled='{{disabled}}'>click</button>

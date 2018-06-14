@@ -1,0 +1,49 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.9.91",
+	"appid": "wx5d41f9749c0fd7d3",
+	"projectname": "lwh-weixin-xcx",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": 0,
+					"name": "lwhtest",
+					"pathName": "pages/lwhtest/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "表单demo",
+					"pathName": "pages/form/form",
+					"query": ""
+				}
+			]
+		}
+	}
+}

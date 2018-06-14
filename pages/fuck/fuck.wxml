@@ -1,0 +1,55 @@
+this is fuck!
+<view><button bindtap="getCurrentPages">获取已经激活的路由</button></view>
+
+<view wx:for="{{arr}}" 
+wx:for-index="no"
+wx:for-item="each">{{each.name}}{{each.age}}+{{no}}</view>
+
+
+<button bindtap='changeount'>changeCount</button>
+<view>{{count}}</view>
+
+
+<template name="tpls">
+  <view>sex:{{sex}},sport:{{sport}}</view>  
+  <view>sex:{{name}},sport:{{age}}</view> 
+</template>
+
+<template is="tpls" data="{{...obj,...obj2}}"></template>
+
+
+<view>嵌套数组
+
+    <view wx:for="{{bigArr}}">{{item.name}}
+    
+          <view style="margin-left:20rpx" wx:for="{{item.list}}" wx:for-item="subitem">{{subitem.name}}</view>
+
+    </view>
+</view>
+
+
+<!--只引入带有template标签的模板-->
+<import src="/templates/a1.wxml" />
+<template is="a1" data='{{name:"allen",age:18}}'></template>
+
+
+<!--只引入除去template标签的模板-->
+<include src="/templates/a1.wxml" />
+
+
+<wxs module="lwh">
+  module.exports={
+      name:"allen",
+      fn:function(){
+        return {age:18}
+      }
+  };
+</wxs>
+
+<view>{{lwh.name}}{{lwh.fn().age}}</view>
+
+<view class="flexBox" style="text-align:center;display:flex;position:relative;line-height:96rpx;">
+  <view class="btn" style="flex:1;position:relative">1</view>
+  <view class="btn" style="flex:1;position:relative">2</view>
+</view>
+

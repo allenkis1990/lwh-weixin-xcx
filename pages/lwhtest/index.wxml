@@ -1,0 +1,50 @@
+<!--pages/lwhtest/index.wxml-->
+<view class="lwh" data-arguments="lwh" bindtap='say'>
+  <text>Hello!  {{name}}</text>
+</view>
+
+<view><button bindtap="changeName">click</button></view>
+
+<view><button bindtap="goFuck">goFuck</button></view>
+
+<view><button bindtap="goWxs">goWXS</button></view>
+
+<view><button bindtap="goForm">goForm</button></view>
+
+<view><button bindtap="goMedia">goMedia</button></view>
+
+<view><view bindtap="goComponentTest">goComponentTest</view></view>
+
+<view><button bindtap="goRequest">goRequest</button></view>
+
+<view><button bindtap="goLwhAlert">goLwhAlert</button></view>
+
+<view><button bindtap="goCss">goCss</button></view>
+
+
+<view><button bindtap="goAPI">goAPI</button></view>
+
+
+<view><button bindtap='loading'>loading</button></view>
+
+
+<view><button bindtap="getCurrentPages">获取已经激活的路由</button></view>
+
+
+<scroll-view scroll-y="true" 
+
+scroll-x="true" 
+class="lwh-scroll">
+    <text>1</text>
+    <text>2</text>
+    <text>3</text>
+    <text>4</text>
+    <text>5</text>
+    <navigator url="https://www.baidu.com">aaa</navigator>
+</scroll-view>
+
+<view  style="width:100%;height:300rpx;border:1px solid #000;display:flex;overflow:hidden;align-items:center"><image   style="width:100%;height:350rpx" src='/images/course-img.jpg'></image></view>
+
+
+
+

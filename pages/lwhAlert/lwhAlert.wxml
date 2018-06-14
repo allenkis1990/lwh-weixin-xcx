@@ -1,0 +1,13 @@
+<import src="/components/lwhAlert/lwhAlert.wxml" />
+<template is="lwhAlert" data="{{...__lwhAlertData__}}"></template>
+
+
+<button bindtap="openAlert" data-title="系统提示" 
+data-content="我是内容！！！！！！！！！！！！">openAlert</button>
+
+<button bindtap="openAlert" data-title="1111" 
+data-content="哈哈哈哈">openAlert</button>
+
+<button bindtap='fn'>fn</button>
+<view>{{obj.name}}</view>
+<view>{{obj.age}}</view>

@@ -1,0 +1,6 @@
+module.exports = {
+  doItem: function (item) {
+
+      return item.aaa
+  }
+};

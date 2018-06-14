@@ -1,0 +1,17 @@
+/* pages/css/css.wxss */
+view{box-sizing:border-box;}
+page{width:100%;height:100%;}
+.main-box{position:relative;overflow:auto;padding-bottom:100rpx;height:100%;}
+.inner-box{height:100rpx;display:flex;align-items:center;border:1px solid red;margin-bottom:40rpx;}
+.inner-box view{line-height:100rpx;}
+
+
+.float-box{width:550rpx;background:blue; display:flex;margin:0 auto;height:450rpx;   justify-content:space-between;flex-wrap:wrap;align-content:space-between}
+.float-box button{width:230rpx;}
+
+
+.li{padding:30rpx;display:flex;align-items:center;position:relative;}
+.li :after{content:' ';position:absolute;border-bottom:1px solid #666;bottom:0;left:0;right:0;}/*设置right0 left0左右撑开*/
+.li .left{width:140rpx;height:65rpx;background:red;}
+.li .right{margin-left:10rpx;background:blue;flex:1;}
+.right-item{margin-bottom:5rpx;color:#fff;}

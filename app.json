@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/lwhtest/index",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/fuck/fuck",
+    "pages/wxs/wxs",
+    "pages/form/form",
+    "pages/media/media",
+    "pages/componentTest/componentTest",
+    "pages/request/request",
+    "pages/lwhAlert/lwhAlert",
+    "pages/css/css",
+    "pages/API/API"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "刘伟恒测试",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/lwhtest/index",
+        "text": "刘伟恒",
+        "iconPath": "images/safe-img1.png",
+        "selectedIconPath": "images/safe-img1.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "index",
+        "iconPath": "images/safe-img2.png",
+        "selectedIconPath": "images/safe-img2.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "logs",
+        "iconPath": "images/safe-img1.png",
+        "selectedIconPath": "images/safe-img1.png"
+      }
+    ],
+    "color": "#999",
+    "selectedColor": "#000"
+  }
+}

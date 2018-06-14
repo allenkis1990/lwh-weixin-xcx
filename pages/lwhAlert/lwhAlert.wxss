@@ -1,0 +1,2 @@
+/* pages/lwhAlert/lwhAlert.wxss */
+@import '/components/lwhAlert/lwhAlert.wxss';

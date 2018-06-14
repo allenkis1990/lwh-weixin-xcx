@@ -1,0 +1,19 @@
+
+<view>
+<picker mode="multiSelector" 
+bindchange="bindMultiPickerChange" 
+bindcolumnchange="bindMultiPickerColumnChange" 
+bindcancel="cancel"
+value="{{valueArr}}" 
+range-key="{{'name'}}"
+range="{{rangeArr}}">
+    <view class="picker" wx:if="{{areaPath.area}}">
+      当前选择：{{areaPath.sheng.name}}-{{areaPath.city.name}}-{{areaPath.area.name}}
+    </view>
+
+    <view class="picker" wx:if="{{!areaPath.area}}">
+      请选择所在地区
+    </view>
+  </picker>
+  <button catchtap='fn'>1111</button>
+</view>

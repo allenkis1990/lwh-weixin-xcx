@@ -1,0 +1,34 @@
+<view wx:if="{{showDialog}}">
+  <view class="modal"></view>
+
+  <view class="dialog">
+    <view class="dialog-header">
+      <view class="dialog-title">{{title}}</view>
+      <view class="dialog-close">
+        <icon type="cancel" bindtap='cancel' />
+      </view>
+    </view>
+    <view class="dialog-content">{{content}}
+        <view>
+          <slot name="key"></slot><slot name="value"></slot>
+        </view>
+
+        <view>特别鸣谢：<block wx:for="{{list}}">{{item+'、'}}</block></view>
+
+        <view><block wx:for="{{behaviorList}}">{{item+'、'}}</block>...{{shit}}</view>
+
+    </view>
+
+
+    <view>
+
+      <dom-content template-src="{{templateSrc}}"></dom-content>
+
+    </view> 
+
+    <view class="dialog-footer">
+      <button class="ok" loading='{{loading}}' disabled='{{loading}}' bindtap='ok' type="primary">确定</button>
+      <button class="cancel" bindtap='cancel' type="default">取消</button>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,94 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+
+
+
+  <checkbox-group bindchange="fn" name="checkboxGroup">
+
+
+    <label wx:for="{{checkboxArr}}" wx:key="checkbox{{index}}">
+      <checkbox value="{{item.name}}" checked='{{item.checked}}' />{{item.name}}
+    </label>
+
+  </checkbox-group>
+
+
+
+
+  <radio-group bindchange="fn" name="radioGroup">
+
+    <label wx:for="{{radioArr}}" wx:key="radio{{index}}">
+      <radio value="{{item.name}}" checked='{{item.checked}}' />{{item.name}}
+    </label>
+
+  </radio-group>
+
+
+  <view style="display:flex;justify-content:center">
+    <input type="text" bindfocus="fn"
+           bindblur=""
+           bindinput="changeInput"
+           name="text"
+           style="border:1px solid #ddd;width:80%" />
+  </view>
+
+
+
+  <view>
+    <picker mode="selector" 
+    bindchange="changeSelector"
+    name="selector"
+    value="2" 
+    range="{{['allen','tom','jack']}}">
+    <view>模式为selector当前选择为:{{hasChoseSelector}}</view>
+    </picker>
+  </view>
+
+  <view>
+    <picker mode="multiSelector" 
+    bindchange="changeMultiSelector" 
+    name="multiSelector"
+    value="{{[0,1,1]}}" 
+    range="{{[['jack','tom'],['fuck','shit'],['haha','hehe']]}}">
+    <view>模式为multiSelector当前选择为:{{multiSelector}}</view>
+    </picker>
+  </view>
+
+
+
+  <!--单个的checkbox用switch来做不会返回数组-->
+  <view>
+
+    <switch type="checkbox"  bindchange="changeSwitch" name="shelwh" />
+    <switch type="switch" bindchange="changeSwitch" />
+  </view>
+
+
+  <view>
+    <button formType="submit">submit</button>
+    <button formType="reset">reset</button>
+  </view>
+
+
+  
+</form>
+
+<view style="display:flex;justify-content:center">
+  <text>姓名：</text><input type="text"
+                         data-type="userName"
+                         value="{{userInfo.userName}}"
+         bindinput="bindInputCommon"
+         name="text"
+         style="border:1px solid #ddd;width:80%" />
+</view>
+<view style="display:flex;justify-content:center">
+  <text>备注：</text><input type="text"
+                         data-type="mark"
+                         value="{{userInfo.mark}}"
+         bindinput="bindInputCommon"
+         name="text"
+         style="border:1px solid #ddd;width:80%" />
+</view>
+<view><text>{{userInfo.userName}}</text>--<text>{{userInfo.mark}}</text></view>
+
+
+<view><button bindtap="getUserInfo">getUserInfo</button></view>

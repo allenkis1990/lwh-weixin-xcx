@@ -1,0 +1,10 @@
+
+
+var wxs2=require('./wxs2.wxs');
+
+module.exports={
+  getDetail:function(){
+    return '姓名：' + wxs2.name + '  年龄：' + wxs2.age
+  }
+};
+

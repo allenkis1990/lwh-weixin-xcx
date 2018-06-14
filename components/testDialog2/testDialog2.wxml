@@ -1,0 +1,24 @@
+<view wx:if="{{showDialog}}">
+  <view class="modal"></view>
+
+  <view class="dialog">
+    <view class="dialog-header">
+      <view class="dialog-title">{{dialogInfo.title}}</view>
+      <view class="dialog-close">
+        <icon type="cancel" bindtap='cancel' />
+      </view>
+    </view>
+
+    <view class="dialog-content">{{dialogInfo.content}}
+
+    </view>
+
+
+
+
+    <view class="dialog-footer">
+      <button class="ok" bindtap='ok' type="primary">确定</button>
+      <button class="cancel" bindtap='cancel' type="default">取消</button>
+    </view>
+  </view>
+</view>

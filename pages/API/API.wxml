@@ -1,0 +1,19 @@
+
+<button bindtap="choseImg">选择图片</button>
+
+<button bindtap='previewImage'>previewImage</button>
+
+<button bindtap='getImageInfo'>getImageInfo</button>
+
+<wxs module='tools' src="../../wxsTemplates/doItem.wxs">
+</wxs>
+<view wx:for="{{arr}}" bindtap="changeBol" 
+wx:key="{{item.name}}"
+data-item="{{item}}">{{item.name}}
+<block wx:if="{{item.checked===true}}">****</block>
+</view>
+
+<view><button catchtap="authorize" data-authorize="address">authorizeAddress</button></view>
+<view><button catchtap="authorize" data-authorize="userInfo">authorizeUserInfo</button></view>
+<view><button catchtap="authorize" data-authorize="camera">authorizeCamera</button></view>
+

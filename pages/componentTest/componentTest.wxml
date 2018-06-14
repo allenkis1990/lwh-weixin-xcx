@@ -1,0 +1,27 @@
+
+
+
+<button bindtap='showDialog'>showDialog</button>
+
+
+<input type="text" style="border:1px solid #666" 
+bindinput="changeDialogContent"
+placeholder='请输入弹窗的内容！！' />
+
+<test-dialog title="{{title}}" 
+bindok="ok"
+content="{{content}}"
+bindcancel="cancel"
+template-src="{{templateSrc}}"
+show-dialog="{{showDialog}}">
+    <view style="display:inline-block" slot="key">组件作者：</view>
+    <view style="display:inline-block" slot="value">刘伟恒</view>
+</test-dialog>
+
+<area-picker area-path="{{areaPath}}"></area-picker>
+
+<button catchtap='getPickerInfo' >getPickerInfo</button>
+
+<button bindtap='showDialog2' catchtap="openLwhAlert">showDialog2</button>
+
+<lwh-dialog id="lwh-dialog"></lwh-dialog>

@@ -1,0 +1,18 @@
+<scroll-view 
+style="height:500rpx;background:red;width:100%;" 
+scroll-y scroll-top="{{scrollTop}}">
+<view>1111</view>
+<view>1111</view>
+<view>1111</view>
+<view>1111</view>
+<view>1111</view>
+<view>1111</view>
+<view>1111</view>
+<view>1111</view>
+<view>1111</view>
+<view>1111</view>
+<view>1111</view>
+<view>1111</view>
+<view>1111</view>
+</scroll-view>
+<button bindtap="fn">11111</button>

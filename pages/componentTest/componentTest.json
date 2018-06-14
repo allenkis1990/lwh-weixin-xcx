@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "test-dialog":"/components/testDialog/testDialog",
+    "lwh-dialog":"/components/testDialog2/testDialog2",
+    "area-picker": "/components/areaPicker/areaPicker"
+  }
+}

@@ -1,0 +1,32 @@
+<template name="lwhAlert">
+
+  <view wx:if="{{showAlert}}">
+    <view class="modal"></view>
+
+    <view class="dialog">
+      <view class="dialog-header">
+        <view class="dialog-title">{{title}}</view>
+
+        <view class="dialog-close">
+          <icon type="cancel" bindtap='cancel' />
+        </view>
+
+
+      </view>
+      <view class="dialog-content">{{content}}</view>
+
+      
+
+      <view class="dialog-footer">
+        <button class="ok" loading='{{loading}}' disabled='{{loading}}' bindtap='ok' type="primary">确定</button>
+        <button class="cancel" bindtap='cancel' type="default">取消</button>
+      </view>
+
+
+      
+
+
+    </view>
+  </view>
+
+</template>

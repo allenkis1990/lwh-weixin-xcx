@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "dom-content":"/components/domContent/domContent"
+  }
+}
